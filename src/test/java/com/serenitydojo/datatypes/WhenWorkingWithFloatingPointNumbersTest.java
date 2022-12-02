@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class WhenWorkingWithFloatingPointNumbers {
+public class WhenWorkingWithFloatingPointNumbersTest {
 
     //
     // Exercise 1: Convert 27 degrees Celcius to Farenheit
@@ -14,7 +14,10 @@ public class WhenWorkingWithFloatingPointNumbers {
     @Test
     public void convertToFarenheit() {
         double celcius = 27.0d;
-        double farenheit = 0.0d;
+        double farenheit;
+        farenheit = ((9 * celcius)/5) + 32;
+
+
 
         // TODO: Use a floating point calculation to calculate the farenheit equivalent of the celcius value.
 
@@ -28,7 +31,9 @@ public class WhenWorkingWithFloatingPointNumbers {
     @Test
     public void convertMetersToFeet() {
         int weightInKilograms = 50;
-        double weightInPounds = 0;
+        double weightInPounds;
+
+        weightInPounds = weightInKilograms * 2.20462;
 
         // TODO: Use a floating point calculation to calculate the correct weight in pounds
 
